@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OouiDemo3.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Xamarin.Forms in the browser via WebAssembly and Ooui!"
+                   FontSize="Large"
+                   FontAttributes="Bold" />
+            <Label Text="Please enter your name" />
+            <Entry Text="{Binding Name}" />
+            <Button Command="{Binding ButtonCommand}"
+                    HeightRequest="50"
+                    CornerRadius="10"
+                    Text="Click me!" />
+            <Label Text="{Binding Greeting}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
